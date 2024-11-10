@@ -19,3 +19,15 @@ Code 2:
 ylabel('H(Po)')
 title('entropy function H(Po)')
 plot2d3('gnn',0.5,1)
+
+Code 3:
+Po= 0:0.01:1;
+H_Po= zeros(1,length(Po));
+for i= 2:length(Po)-1
+    H_Po(i)= -Po(i)*log2(Po(i))-(1-Po(i))*log2(1-Po(i));
+end
+plot2d(Po,H_Po)
+xlabel('Symbol Probability, Po')
+ylabel('H(Po)')
+abort
+
