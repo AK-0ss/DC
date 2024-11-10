@@ -1,0 +1,11 @@
+r=1/2;
+n=2;
+pe=0.04;
+p=1-pe;
+gamma_1 = 2*log2(p)+2*(1-r);
+gamma_2 = log2(pe*p)+1;
+gamma_3 = 2*log2(pe)+1;
+disp (gamma_1, 'branch metric for correct reception')
+disp (gamma_2, 'branch metric for any one correct reception')
+disp (gamma_3, 'branch metric for no correct reception')
+
